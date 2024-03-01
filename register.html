@@ -45,8 +45,18 @@
             <div><input type="password" placeholder="Confirm Password" class="redText"></div>
             <div><input type="text" placeholder="First Name" value="" class="redText"></div>
             <div><input type="text" placeholder="Last Name" value="" class="redText"></div>
-        <button style="color:red;" class="redText">Cancel</button>
-        <button style="color:green;" class="redText">Register</button>
+            <a href="index.html"><button style="color:red;" class="redText">Cancel</button></a>
+        <a href="index.html"><button style="color:green;" button id="buttonRegister" class="redText">Register</button></a>
     </div>
 </body>
+<script>
+    // Javascript
+    console.log("Hello World");
+    // Declaring variable
+    // let / var
+    let btnLogin = document.querySelector("#buttonRegister");
+    btnLogin.onclick = function () {
+        alert('Register successfully!');
+    }
+    </script>
 </html>
