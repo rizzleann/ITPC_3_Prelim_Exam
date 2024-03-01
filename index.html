@@ -45,7 +45,17 @@
         <input type="text" placeholder="Username" class="redText">
        <input type="password" placeholder="Password" class="redText">
         <div><button id="buttonLogin" class="button" class="redText">Login</button></div>
-        <div><button id="buttonRegister" class="button" class="redText">Register</button></div>
+        <a href="./register.html"><div><button id="buttonRegister" class="button" class="redText">Register</button></div></a>
     </div>
 </body>
+<script>
+    // Javascript
+    console.log("Hello World");
+    // Declaring variable
+    // let / var
+    let btnLogin = document.querySelector("#buttonLogin");
+    btnLogin.onclick = function () {
+        alert('Login successful');
+    }
+</script>
 </html>
