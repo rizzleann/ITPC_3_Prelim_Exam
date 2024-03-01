@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Homepage</title>
+    <Style>
+        #divContainer {
+            text-align: center;
+        }
+        /* pang class name */
+        .redText {
+            color: black;
+            background-color: #b2e0ef;
+            margin: 1rem;
+        }
+
+        /* sample ng may event */
+        .redText:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(115, 159, 239);
+        }
+        .button:hover {
+            color:rgb(143, 221, 234);
+            background-color: green;
+        } 
+        .button {
+            color: black;
+            background-color: lavender;
+            font-size: large;
+            cursor: pointer;
+        }
+        /*  */
+        input {
+            margin-bottom: 1rem;
+            font-size: large;
+        }
+       
+        
+    </Style>
 </head>
 <body>
     <div id="divContainer">
         <h1>Welcome To Homepage</h1>
         <input type="text" placeholder="Username" class="redText">
        <input type="password" placeholder="Password" class="redText">
-        <div><button id="buttonLogin" class="button">Login</button></div>
-        <div><button id="buttonLogin" class="button">Register</button></div>
+        <div><button id="buttonLogin" class="button" class="redText">Login</button></div>
+        <div><button id="buttonRegister" class="button" class="redText">Register</button></div>
     </div>
 </body>
 </html>
