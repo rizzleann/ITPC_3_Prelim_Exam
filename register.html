@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Register</title>
+    <Style>
+        #divContainer {
+            text-align: center;
+        }
+        /* pang class name */
+        .redText {
+            color: black;
+            background-color: #b2e0ef;
+            margin: 1rem;
+        }
+
+        /* sample ng may event */
+        .redText:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(115, 159, 239);
+        }
+        .button:hover {
+            color:rgb(143, 221, 234);
+            background-color: green;
+        } 
+        .button {
+            color: black;
+            background-color: lavender;
+            font-size: large;
+            cursor: pointer;
+        }
+        /*  */
+        input {
+            margin-bottom: 1rem;
+            font-size: large;
+        }
+        </style>
 </head>
 <body>
-    <div style="text-align: center;">
+    <div id="divContainer">
         <h1>Create an account</h1>
-
-        <div style="margin-bottom: 1rem;">
-            <input type="text" placeholder="Username" value="">
-        </div>
-        <div style="margin-bottom: 1rem;">
-            <input type="text" placeholder="Password" value="">
-        </div>
-        <div style="margin-bottom: 1rem;">
-            <input type="password" placeholder="Confirm Password">
-        </div>
-        <div style="margin-bottom: 1rem;">
-            <input type="text" placeholder="First Name" value="">
-        </div>
-        <div style="margin-bottom: 1rem;">
-            <input type="text" placeholder="Last Name" value="">
-        </div>
-        <button style="color:red;">Cancel</button>
-        <button style="color:green;">Register</button>
+            <div><input type="text" placeholder="Username" value="" class="redText"></div>
+            <div><input type="text" placeholder="Password" value="" class="redText"></div>
+            <div><input type="password" placeholder="Confirm Password" class="redText"></div>
+            <div><input type="text" placeholder="First Name" value="" class="redText"></div>
+            <div><input type="text" placeholder="Last Name" value="" class="redText"></div>
+        <button style="color:red;" class="redText">Cancel</button>
+        <button style="color:green;" class="redText">Register</button>
     </div>
 </body>
 </html>
